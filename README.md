@@ -11,8 +11,12 @@ Plataforma para o sistema de RPG **Brisa e Lamentações**.
 
 ## Executar o MVP
 
-1. `cd apps/web && npm install && npm run dev`
-2. `cd apps/api && dotnet run`
+Na raiz do repositório:
+
+1. `npm run install:web && npm run dev:web`
+2. Em outro terminal: `npm run dev:api`
+
+Também é possível executar diretamente nas pastas `apps/web` e `apps/api`.
 
 O front-end do MVP funciona com dados locais de demonstração; a API expõe o contrato e o hub em tempo real para a próxima conexão com PostgreSQL.
 

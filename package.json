@@ -1,0 +1,12 @@
+{
+  "name": "brisa-e-lamentacoes",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "install:web": "npm install --prefix apps/web",
+    "dev:web": "npm run dev --prefix apps/web",
+    "build:web": "npm run build --prefix apps/web",
+    "build:api": "dotnet build apps/api/Brisa.Api.csproj",
+    "dev:api": "dotnet run --project apps/api/Brisa.Api.csproj"
+  }
+}

@@ -1,0 +1,1 @@
+export default function Homebrew(){return <main className="container"><span className="eyebrow">Homebrew</span><h1>Crie sem quebrar a estrutura</h1><div className="card"><p>Classes, Caminhos, nós, magias, técnicas e equipamentos usarão os mesmos contratos do conteúdo oficial, com visibilidade privada, compartilhada ou publicada.</p></div></main>}

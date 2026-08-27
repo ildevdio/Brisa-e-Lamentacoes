@@ -1,0 +1,13 @@
+# Dependencies and framework output
+node_modules/
+.next/
+bin/
+obj/
+
+# Local tooling and rendered inspection assets
+work/
+
+# Secrets and local environment overrides
+.env
+.env.*
+!.env.example

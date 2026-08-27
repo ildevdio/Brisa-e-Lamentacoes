@@ -1,0 +1,1 @@
+using Brisa.Api.Domain;namespace Brisa.Api.Rules;public sealed class RollService { public RollResult Resolve(RollRequest r){var success=r.Hope+r.Fear>r.Difficulty;var hope=success&&r.Hope>r.Fear;var generated=hope?(r.ClassKind==ClassKind.Magical?3:1):0;return new(r.Hope+r.Fear,success,hope,generated,hope?"Sucesso com Esperança":success?"Sucesso":"Falha");} }

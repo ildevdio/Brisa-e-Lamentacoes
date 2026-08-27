@@ -1,0 +1,1 @@
+using Microsoft.AspNetCore.SignalR;namespace Brisa.Api;public sealed class SessionHub:Hub { public Task JoinCampaign(string campaignId)=>Groups.AddToGroupAsync(Context.ConnectionId,$"campaign:{campaignId}"); public Task PublishEvent(string campaignId,object action)=>Clients.Group($"campaign:{campaignId}").SendAsync("eventRecorded",action); }
